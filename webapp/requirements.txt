@@ -1,5 +1,5 @@
 category-encoders
-Flask==2.2.3
+Flask==2.2.5
 inflection==0.5.1
 matplotlib==3.6.3
 numpy==1.24.1
