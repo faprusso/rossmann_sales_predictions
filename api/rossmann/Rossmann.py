@@ -156,7 +156,7 @@ class Rossmann( object ):
     
     def get_prediction( self, model, original_data, test_data):
         # prediction
-        pred = model.predict( test_data)
+        pred = model.predict( test_data )
 
         # join pred into the original data
         original_data['prediction'] = np.expm1(pred)
