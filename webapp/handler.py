@@ -5,7 +5,7 @@ import pickle
 import os
 
 # loading model
-model = pickle.load(open('/webapp/model/model_rossmann.pkl', 'rb'))
+model = pickle.load(open('webapp/model/model_rossmann.pkl', 'rb'))
 
 app = Flask(__name__)
 
