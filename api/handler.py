@@ -5,23 +5,22 @@ import pickle
 import os
 
 # loading model
-model = pickle.load(open('../webapp/model/model_rossmann.pkl', 'rb'))
+model = pickle.load(open('api\model_rossmann.pkl', 'rb'))
 
 app = Flask(__name__)
 
 # defining endpoint com os métodos que recebe
-
-
 @app.route('/rossmann/predict', methods=['POST'])
+
 # after POST, endpoint will run rossmann_predict
 def rossmann_predict():
     test_json = request.get_json()
 
-    if test_json:  # is there data?
-        if isinstance(test_json, dict):  # Unique Example
+    if test_json: # is there data?
+        if isinstance(test_json, dict): # Unique Example
             test_raw = pd.DataFrame(test_json, index=[0])
-        else:  # multiple examples
-            test_raw = pd.DataFrame(test_json, columns=test_json[0].keys())
+        else: # multiple examples
+            test_raw = pd.DataFrame( test_json, columns=test_json[0].keys())
 
         # Instantiate Rossmann class
         pipeline = Rossmann()
@@ -38,8 +37,7 @@ def rossmann_predict():
         return df_response
     else:
         return Response('{}', status=200, mimetype='application/json')
-
-
+    
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=False)
+    app.run(host='0.0.0.0', port=port,debug=False)
