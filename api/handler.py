@@ -5,7 +5,7 @@ import pickle
 import os
 
 # loading model
-model = pickle.load(open('api/model_rossmann.pkl', 'rb'))
+model = pickle.load(open('C:/Users/Felipe/OneDrive/Documentos/repos/ds_em_producao_mentoria/api/model_rossmann.pkl', 'rb'))
 
 app = Flask(__name__)
 
