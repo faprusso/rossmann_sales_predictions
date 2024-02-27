@@ -101,9 +101,9 @@ Fiz o levantamente de 12 hipóteses para realização da EDA, objetivando entend
 | H7       | Lojas abertas durante o feriado de Natal deveriam vender mais. | FALSA          | MEDIA      |
 | H8       | Lojas deveriam vender mais ao longo dos anos.                  | FALSA          | ALTA       |
 | H9       | Lojas deveriam vender mais no segundo semestre do ano.         | VERDADEIRA     | ALTA       |
-| H10      | Lojas deveriam vender mais depois do dia 10 de cada mês.       | FALSO          | ALTA       |
+| H10      | Lojas deveriam vender mais depois do dia 10 de cada mês.       | FALSA          | ALTA       |
 | H11      | Lojas deveriam vender menos aos finais de semana.              | VERDADEIRA     | ALTA       |
-| H12      | Lojas deveriam vender menos durante os feriados escolares.     | FALSA          | BAIXA      |
+| H12      | Lojas deveriam vender menos durante os feriados escolares.     | VERDADEIRA        | BAIXA      |
 
 Principais considerações:
 
